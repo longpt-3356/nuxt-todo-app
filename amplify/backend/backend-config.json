@@ -1,0 +1,157 @@
+{
+  "api": {
+    "nuxttodoapp": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "auth": {
+    "nuxttodoapp722cf9f0": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "nuxttodoapp5dd64174CreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "nuxttodoapp5dd64174CustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "nuxttodoapp5dd64174DefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "nuxttodoapp5dd64174PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "nuxttodoapp5dd64174VerifyAuthChallengeResponse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_nuxttodoapp5dd64174CreateAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174CreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174CreateAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174CreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174CustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174CustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174DefineAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174DefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174DefineAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174DefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174PostConfirmation_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174PostConfirmation_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174PostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174VerifyAuthChallengeResponse_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174VerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_nuxttodoapp5dd64174VerifyAuthChallengeResponse_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "nuxttodoapp5dd64174VerifyAuthChallengeResponse"
+        }
+      ]
+    }
+  }
+}

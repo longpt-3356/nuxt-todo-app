@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "nuxttodoapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}

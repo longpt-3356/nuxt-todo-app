@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-define-challenge",
+    "boilerplate-define-challenge"
+  ],
+  "parentResource": "nuxttodoapp5dd64174",
+  "functionName": "nuxttodoapp5dd64174DefineAuthChallenge",
+  "resourceName": "nuxttodoapp5dd64174DefineAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "/snapshot/amplify-cli/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/DefineAuthChallenge",
+  "triggerTemplate": "DefineAuthChallenge.json.ejs",
+  "triggerEventPath": "DefineAuthChallenge.event.json",
+  "roleName": "nuxttodoapp5dd64174DefineAuthChallenge",
+  "skipEdit": true
+}

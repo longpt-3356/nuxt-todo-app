@@ -1,0 +1,45 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nuxttodoapp-dev-afcb6-authRole",
+      "UnauthRoleArn": "arn:aws:iam::773872547985:role/amplify-nuxttodoapp-dev-afcb6-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::773872547985:role/amplify-nuxttodoapp-dev-afcb6-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-nuxttodoapp-dev-afcb6-deployment",
+      "UnauthRoleName": "amplify-nuxttodoapp-dev-afcb6-unauthRole",
+      "StackName": "amplify-nuxttodoapp-dev-afcb6",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:773872547985:stack/amplify-nuxttodoapp-dev-afcb6/4cf53e80-38a7-11f0-97a2-0a0da064c97f",
+      "AmplifyAppId": "d39tdjjcx9y8gj"
+    },
+    "categories": {
+      "auth": {
+        "nuxttodoapp722cf9f0": {}
+      },
+      "function": {
+        "nuxttodoapp5dd64174CreateAuthChallenge": {
+          "deploymentBucketName": "amplify-nuxttodoapp-dev-afcb6-deployment",
+          "s3Key": "amplify-builds/nuxttodoapp5dd64174CreateAuthChallenge-706f7241726e73422b65-build.zip"
+        },
+        "nuxttodoapp5dd64174CustomMessage": {
+          "deploymentBucketName": "amplify-nuxttodoapp-dev-afcb6-deployment",
+          "s3Key": "amplify-builds/nuxttodoapp5dd64174CustomMessage-64577771526f79624968-build.zip"
+        },
+        "nuxttodoapp5dd64174DefineAuthChallenge": {
+          "deploymentBucketName": "amplify-nuxttodoapp-dev-afcb6-deployment",
+          "s3Key": "amplify-builds/nuxttodoapp5dd64174DefineAuthChallenge-2f4b7044706e77713152-build.zip"
+        },
+        "nuxttodoapp5dd64174PostConfirmation": {
+          "deploymentBucketName": "amplify-nuxttodoapp-dev-afcb6-deployment",
+          "s3Key": "amplify-builds/nuxttodoapp5dd64174PostConfirmation-584e6c616e754d457530-build.zip"
+        },
+        "nuxttodoapp5dd64174VerifyAuthChallengeResponse": {
+          "deploymentBucketName": "amplify-nuxttodoapp-dev-afcb6-deployment",
+          "s3Key": "amplify-builds/nuxttodoapp5dd64174VerifyAuthChallengeResponse-55374c797538784f7054-build.zip"
+        }
+      },
+      "api": {
+        "nuxttodoapp": {}
+      }
+    }
+  }
+}
